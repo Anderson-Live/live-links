@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <style>
+       html, body {
+           padding: 0;
+           margin: 0;
+           box-sizing: border-box;
+
+       }
+       /* Alinhamento do container geral */
+       .container {
+           display: grid;
+           grid-template-columns: 2fr 4fr;
+           grid-template-rows: 25vh 68vh 7vh;
+           grid-template-areas: "h h"
+                                "s m"
+                                "f m";
+       }
+       /* Cor e tamanho do cabeçalho */
+       .header {
+           background-color: #FA7F00;
+           grid-area: h;
+
+           display: flex;
+           justify-content: center;
+           align-items: center;
+       }
+       /* Fonte do título */
+       .header h1 {
+          font-size: 60px;
+          font-family: 'Times New Roman', Times, serif;
+          color: white;
+       }
+       /* Cor e alinhamento da seção */
+       .section {
+           background-color: #1F6A8F;
+           grid-area: s;
+           padding: 20px;
+       }
+       /* fonte e cor dos parágrafos */
+       .section p {
+            font-family: 'Times New Roman', Times, serif;
+            color: white;
+            font-size: 20px;
+       }
+       /* Cor e alinhamento do grid dos botões */
+       .main {
+        background-color: white;
+        grid-area: m;
+       
+       }
+       /* Removendo a linha dos links*/
+       .main a {
+           text-decoration: none;
+       }
+       /* Alinhamento do grid dos botôes */
+       .main-grid {
+            height: 68vh;
+            
+            padding: 20px;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr 1fr 1fr;
+            grid-gap: 20px;
+
+       }
+       /* Tamanho, cor, fonte dos botões */
+       button {
+           background-color: #FA7F00;
+           height: 100%;
+           width: 100%;
+           color: white;
+           font-family: 'Times New Roman', Times, serif; 
+           font-size: 20px;
+           border: 1px solid;
+           border-radius: 10px;
+
+            box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+       }
+       /* Efeito de passar o mouse nos botões */
+       button:hover {
+           background-color: orange;
+       }
+       /* Cor e alinhamento do rodapé */
+       .footer {
+           background-color: #1F6A8F;
+           grid-area: f;
+
+           display: flex;
+           justify-content: center;
+           align-items: center;
+       }
+       
+       .footer p {
+            color: white;
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 20px; 
+            margin: 0;
+       }
+
+       .footer a {
+           text-decoration: none;
+           color: #FA7F00;
+       }
+      
+       .footer a:hover {
+            color: red;
+       }
+      
+       /* responsividade tablet */
+       @media (min-width: 751px) and (max-width: 1000px) {
+            .section {
+                max-width: 100vw;
+                max-height: max-content;
+                text-align: center;
+
+                overflow-y: auto;
+
+            }
+
+            .footer {
+                max-width: 100vw;
+                max-height: max-content;
+                text-align: center;
+
+            }
+       }
+       /* fim responsividade tablet */
+
+       /* responsividade mobile */
+       @media (max-width: 750px) and (min-height: 220px){
+           .container {
+               display: grid;
+               grid-template-columns: 1fr;
+               grid-template-rows: 20vh 40vh 33vh 7vh;
+               grid-template-areas: "h"
+                                    "s"
+                                    "m"
+                                    "f";
+                overflow-x: hidden;
+                overflow-y: scroll;
+           }
+
+           .header {
+               grid-area: h;
+               max-width: 100vw;
+
+               text-align: center;
+           }
+
+           .header h1 {
+               font-size: 40px;
+               padding: 0;
+           }
+
+           .section {
+               grid-area: s;
+               max-width: 100vw;
+            
+                overflow-y: auto;   
+           }
+
+           .section p {
+               font-size: 15px;
+               padding: 0;
+               margin-top: 0;
+           }
+
+           .main {
+               height: 30vh;
+               grid-area: m;
+               max-width: 100vw;
+               
+               
+           }
+
+           .footer {
+               grid-area: f;
+               max-width: 100vw;
+               display: flex;
+               align-items: center;
+               justify-content: center;
+
+               
+           }
+
+           .footer p {
+               font-size: 16px;
+           }
+
+           .main-grid {
+                height: 22vh;
+                display: grid;
+                grid-template-columns: 1fr;
+                grid-template-rows: 3fr;
+                grid-gap: 10px;
+
+                overflow-x: hidden;
+                overflow-y: scroll;
+           }
+
+           button {
+               height: 70px;
+           }
+
+           
+       }
+       /* fim mobile */
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="https://image.flaticon.com/icons/svg/1085/1085648.svg" type="image/x-icon">
+    <!-- Título -->
+    <title>Live Implantação</title>
+</head>
+<body>
+    <!-- Container geral -->
+    <div class="container">
+        <!-- Cabeçalho -->
+        <div class="header">
+            <header><h1>Live Implantação</h1></header>
+        </div>
+        <!-- Seção -->
+        <div class="section">
+            <section>
+                <p>
+                    Ao clicar em um dos botões você abrirá uma página de download do arquivo. Deixei em arquivos 
+                    separados para os casos em que só precisa baixar um arquivo específico.
+                </p>
+                <p>
+                    Esta página foi criada para facilitar o download dos arquivos de implantação e alguns aplicativos
+                    de utilidade para os técnicos e as revendas.
+                </p>
+                <p>Foi desenvolvida para treinar os fundamentos do 
+                    <img src="https://img.icons8.com/color/48/000000/html-5.png"/> e 
+                    <img src="https://img.icons8.com/color/48/000000/css3.png"/>.
+                </p>
+            </section>
+        </div>
+        <!-- Grid dos botões com os links-->
+        <div class="main">
+            <div class="main-grid">
+                    <div class="link">
+                        <a href="https://mega.nz/file/ZUwzmaYB#gI9erA2ukAOgwjsMubwudtk0AQ0DZ_cva_C83wcId24" target="_blank"><button>Live PDV</button></a>
+                    </div>
+                    <div class="link">
+                        <a href="https://mega.nz/file/8Ug3wAAJ#1gcU8cuOQBOEHnxj8NA5iYYtqnymWip14fuGBG2syS4" target="_blank"><button>Live Concentrador</button></a>
+
+                    </div>
+                    <div class="link">
+                        <a href="https://mega.nz/file/IQx3lIYb#TutHmOtBZ_aBReYyKFX7NPevIODQCxLayDbVMOimnjs" target="_blank"><button>Live PV</button></a>
+
+                    </div>
+                    <div class="link">
+                        <a href="https://mega.nz/file/9UwVkIaI#MRzc7_NKsaKkA6Dh36lKkjuW40BzWVPTNxYmmqgZ0KI" target="_blank"><button>Firebird</button></a>
+
+                    </div>
+                    <div class="link">
+                        <a href="https://mega.nz/file/tE4hnYrI#c0qCmEItaWrfHSaxycvyWWekUSI0eOia2H6IqdiW39c" target="_blank"><button>Cadeias e Certificados</button></a>
+
+                    </div>
+                    <div class="link">
+                        <a href="https://mega.nz/file/sMhnQQ5K#wefsAIVfqVUek81UXvrYgIhCo5D5zplX47pUGiC26k0" target="_blank"><button>Instalador de Agente A3</button></a>
+
+                    </div>
+                    <div class="link">
+                        <a href="https://mega.nz/file/VBwXzQrY#6zAxkr2dmLoUX4iT0L-QupvMAeDLjoaBRsn_BGfv5Pw" target="_blank"><button>IBExpert</button></a>
+
+                    </div>
+                    <div class="link">
+                        <a href="https://mega.nz/file/YUhVCQbA#ynSFtmUzzi_YM3VBoYJTRE8tfd7Xdh_6Ek2CP-Vn9KI" target="_blank"><button>Arquivos Sitef</button></a>
+
+                    </div>
+                    <div class="link">
+                        <a href="https://mega.nz/file/hYpn0a7a#q6J48Ke-QyxWPZq4PtT3SCqM9azbvcpxPVoxD-P5B-s" target="_blank"><button>RecuperaFb</button></a>
+
+                    </div>
+                    <div class="link">
+                        <a href="https://mega.nz/file/xMoDTaqK#yBItlzWk1Rao-sO0zumydW8nIlPRgJZ4iTJ7PBpdLBA" target="_blank"><button>Reinicia Abastecimentos</button></a>
+
+                    </div>
+                    <div class="link">
+                        <a href="https://mega.nz/file/BJxhQSzQ#uh93YP3EBXYomZhnVmcp0YZTq3bXzaF69TXitFOZj4M" target="_blank"><button>Acesso Remoto</button></a>
+
+                    </div>
+                    <div class="link">
+                        <a href="https://mega.nz/file/xY5RUSTQ#sSPBkZrOu6k0v_iITSerS83PF_1A8pqv3j2HObdjq8o" target="_blank"><button>Banco do Concentrador</button></a>
+
+                    </div>
+                    <div class="link">
+                        <a href="https://mega.nz/file/0EoRlYJL#6jaeGpW4IOR55ONk7VW_hU_eK2Yd7YTWO9_Me6kCLs0" target="_blank"><button>Driver da Epson TM T20</button></a>
+
+                    </div>
+                    <div class="link">
+                        <a href="https://mega.nz/file/wVoxGCSB#rhJUnDZUc29OhAYYzK4QnS03X1H8mGGY_QcUwensBlo" target="_blank"><button>Driver da Bermatech</button></a>
+
+                    </div>
+                    <div class="link">
+                        <a href="https://mega.nz/file/AVoliS5K#zB0Tfk-83KrCouAPWLHsPZlYWQ4k3qJzN3w1bdxIv4A" target="_blank"><button>Driver da Daruma DR800</button></a>
+
+                    </div>
+                    <div class="link">
+                        <a href="https://mega.nz/file/cUxnRQQL#VzY3IcQOg_Ijh1l25EXIzWcHu5BzHZcsMdte7Zej_Qs" target="_blank"><button>Certificado Company</button></a>
+                    
+                    </div>
+                    
+            </div>
+        </div>
+        <!-- Rodapé -->
+        <div class="footer">
+            <footer><p>Desenvolvido por <a href="https://github.com/Anderson026?tab=repositories" target="_blank"><strong>Anderson Ferreira</strong></a></p></footer>
+        </div>
+    </div>
+</body>
+</html>
