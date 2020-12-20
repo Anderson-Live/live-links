@@ -51,7 +51,7 @@
         color: white;
         cursor: pointer;
         padding: 18px;
-        width: 50vw;
+        width: 60vw;
         border: none;
         text-align: left;
         outline: none;
@@ -88,14 +88,36 @@
 
     }
     /* cor dos links */
-    a {
+    /* a {
         color: #1F6A8F;
         font-size: 1.2rem;
         margin: 2px;
-    }
+    } */
     /* efeito de passar o mouse nos links */
-    a:hover {
+   /*  a:hover {
         color: orange;
+    } */
+
+    /* Alinhamento das tabelas */
+    table {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    /* Estilização do cabeçalho das tabelas */
+    th {
+      text-align: center;
+        padding: 0px 35px;
+        color: #1F6A8F;
+        font-size: 1.1rem;
+    }
+    /* Estilização do conteúdo da tabela */
+    tr, td {
+        text-align: center;
+        padding: 0px 35px;
+        color: #1F6A8F;
+        font-size: 1rem;
     }
     /* tamanho e alinhamento do rodapé */
     .footer {
@@ -143,221 +165,627 @@
     <!-- sessão com os botões e links -->
     <div class="section">
       <p>Feito para facilitar a vida dos técnicos e revendas</p>
-      <button class="accordion">Arquivos de instalação</button>
+      <button class="accordion">Arquivos de instalação de PDV</button>
       <div class="panel">
         <div class="link">
-          <a href="https://mega.nz/file/ZUwzmaYB#gI9erA2ukAOgwjsMubwudtk0AQ0DZ_cva_C83wcId24" rel="noopener noreferrer" target="_blank">Pasta do PDV</a>
-        </div>
-
-        <div class="link">
-          <a href="https://mega.nz/file/8Ug3wAAJ#1gcU8cuOQBOEHnxj8NA5iYYtqnymWip14fuGBG2syS4" rel="noopener noreferrer" target="_blank">Pasta do Concentrador</a>
-        </div>
-
-        <div class="link">
-          <a href="https://mega.nz/file/IQx3lIYb#TutHmOtBZ_aBReYyKFX7NPevIODQCxLayDbVMOimnjs" rel="noopener noreferrer" target="_blank">Pasta Live PV</a>
-        </div>
-
-        <div class="link">
-          <a href="https://mega.nz/file/tE4hnYrI#c0qCmEItaWrfHSaxycvyWWekUSI0eOia2H6IqdiW39c" rel="noopener noreferrer" target="_blank">Cadeias e Certificados</a>
-        </div>
-
-        <div class="link">
-          <a href="https://mega.nz/file/sMhnQQ5K#wefsAIVfqVUek81UXvrYgIhCo5D5zplX47pUGiC26k0" rel="noopener noreferrer" target="_blank">Agente de Comunicação Certificado A3</a>
-        </div>
-
-        <div class="link">
-          <a href="https://mega.nz/file/1FpBHaqR#ku_gsrLOsLzcGNsbPR55aSYoV7K1VP877eDyqKcY2es" rel="noopener noreferrer" target="_blank">Agente de Comunicação Certificado A3 (Nova Versão 01/12/2020)</a>
-        </div>
-
-        <div class="link">
-          <a href="https://mega.nz/file/9UwVkIaI#MRzc7_NKsaKkA6Dh36lKkjuW40BzWVPTNxYmmqgZ0KI" rel="noopener noreferrer" target="_blank">Firebird</a>
-        </div>
-
-        <div class="link">
-          <a href="https://mega.nz/file/VBwXzQrY#6zAxkr2dmLoUX4iT0L-QupvMAeDLjoaBRsn_BGfv5Pw" rel="noopener noreferrer" target="_blank">IB Expert</a>
-        </div>
-
-        <div class="link">
-          <a href="https://mega.nz/file/0IAUlJSL#viAbAOvPIpB316VzZv9dJjr7cBcBlmslB51yrEowiCo" rel="noopener noreferrer" target="_blank">Banco do Concentrador (Nova Versão 15/12/2020)</a>
-        </div>
-
-        <div class="link">
-          <a href="https://mega.nz/file/hYpn0a7a#q6J48Ke-QyxWPZq4PtT3SCqM9azbvcpxPVoxD-P5B-s" rel="noopener noreferrer" target="_blank">Recupera FB</a>
-        </div>
-
-        <div class="link">
-          <a href="https://mega.nz/file/xMoDTaqK#yBItlzWk1Rao-sO0zumydW8nIlPRgJZ4iTJ7PBpdLBA" rel="noopener noreferrer" target="_blank">Reinicia Abastecimentos</a>
-        </div>
-
-        <div class="link">
-          <a href="https://mega.nz/file/BJxhQSzQ#uh93YP3EBXYomZhnVmcp0YZTq3bXzaF69TXitFOZj4M" rel="noopener noreferrer" target="_blank">Acesso Remoto Milvus</a>
-        </div>
-
-        <div class="link">
-          <a href="https://mega.nz/file/JIAVRSwC#UqCE0abKe6w9Ue4ODjZOj_NStvys-Ts1ay9TR2iGqKs" rel="noopener noreferrer" target="_blank">Live Concentrador Versão 2.0.0.22 + Dlls</a>
-        </div>
+          <table>
+            <tr>           
+              <th>Baixar</th>
+              <th>Descrição</th>
+              <th>Versão</th>
+              <th>Data de Lançamento</th>         
+            </tr>
+            <!-- Pasta do PDV -->
+            <tr>
+                <td>
+                    <a href="https://www.dropbox.com/s/3v2hmo5m38jmbe8/LivePDV.rar?dl=1">
+                        <img src="https://www.flaticon.com/svg/static/icons/svg/3860/3860590.svg" alt="Download" height="18px" width="18px">
+                    </a>
+                </td>               
+                <td>Pasta do PDV</td>
+                <td>1.0.0.0</td>
+                <td>14/07/2020</td>
+            </tr>
+            <!-- Pasta do Concentrador -->
+            <tr>
+                <td>
+                    <a href="https://www.dropbox.com/s/re4n63v810nkdnq/LiveConcentrador.rar?dl=1">
+                        <img src="https://www.flaticon.com/svg/static/icons/svg/3860/3860590.svg" alt="Download" height="18px" width="18px">
+                    </a>
+                </td>               
+                <td>Pasta do Concentrador</td>
+                <td>1.5.20.0</td>
+                <td>31/07/2019</td>
+            </tr>
+            <!-- Pasta do Live PV -->
+            <tr>
+              <td>
+                  <a href="https://www.dropbox.com/s/tp3u53hllxqpyvk/LivePV.rar?dl=1">
+                      <img src="https://www.flaticon.com/svg/static/icons/svg/3860/3860590.svg" alt="Download" height="18px" width="18px">
+                  </a>
+              </td>               
+              <td>Pasta do Live PV</td>
+              <td>1.0.0.0</td>
+              <td>01/08/2019</td>
+            </tr>
+            <!-- Pasta Cadeias e Certificados -->
+            <tr>
+              <td>
+                  <a href="https://www.dropbox.com/s/t6tunwcwfgzvw7m/Cadeias%20e%20Certificados.rar?dl=1">
+                      <img src="https://www.flaticon.com/svg/static/icons/svg/3860/3860590.svg" alt="Download" height="18px" width="18px">
+                  </a>
+              </td>               
+              <td>Cadeias e Certificados</td>
+              <td>1.0.0.0</td>
+              <td>27/12/2017</td>
+            </tr>
+            <!-- Firebird -->
+            <tr>
+              <td>
+                  <a href="https://www.dropbox.com/s/d6lwuux8sgms49e/Firebird.rar?dl=1">
+                      <img src="https://www.flaticon.com/svg/static/icons/svg/3860/3860590.svg" alt="Download" height="18px" width="18px">
+                  </a>
+              </td>               
+              <td>Firebird</td>
+              <td>2.5.9.27</td>
+              <td>31/07/2019</td>
+            </tr>
+            <!-- IBExpert -->
+            <tr>
+              <td>
+                  <a href="https://www.dropbox.com/s/fgj5ref9xb72bt8/Ibexpert_Portable.rar?dl=1">
+                      <img src="https://www.flaticon.com/svg/static/icons/svg/3860/3860590.svg" alt="Download" height="18px" width="18px">
+                  </a>
+              </td>               
+              <td>IBExpert</td>
+              <td>2.1.21.0</td>
+              <td>21/02/2012</td>
+            </tr>
+            <!-- Concentrador versão 1.5.22 -->
+            <tr>
+              <td>
+                  <a href="https://www.dropbox.com/s/t5vzzl0yh3cce2s/COCENTRADOR%20NOVO%20%2B%20DLLS.rar?dl=1">
+                      <img src="https://www.flaticon.com/svg/static/icons/svg/3860/3860590.svg" alt="Download" height="18px" width="18px">
+                  </a>
+              </td>               
+              <td>Live Concentrador + Dlls</td>
+              <td>1.5.22.0</td>
+              <td>07/11/2019</td>
+            </tr>
+            <!-- Banco do Concentrador -->
+            <tr>
+              <td>
+                  <a href="https://www.dropbox.com/s/enurvs4f2ofeocx/LIVECONCENTRADOR.FDB?dl=1">
+                      <img src="https://www.flaticon.com/svg/static/icons/svg/3860/3860590.svg" alt="Download" height="18px" width="18px">
+                  </a>
+              </td>               
+              <td>Banco do Concentrador</td>
+              <td>1.1.0.0</td>
+              <td>16/12/2020</td>
+            </tr>
+            <!-- Live NFE (A3) -->
+            <tr>
+              <td>
+                  <a href="https://www.dropbox.com/s/nrgi9au1733rjru/LiveNFe%20-%20Nova%20Vers%C3%A3o.rar?dl=1">
+                      <img src="https://www.flaticon.com/svg/static/icons/svg/3860/3860590.svg" alt="Download" height="18px" width="18px">
+                  </a>
+              </td>               
+              <td>Live NFE (Certificado A3)</td>
+              <td>1.3.0.0</td>
+              <td>31/10/2019</td>
+            </tr>
+            <!-- Recupera FB -->
+            <tr>
+              <td>
+                  <a href="https://www.dropbox.com/s/0skxo9lvxjue3hk/RecuperaFb.rar?dl=1">
+                      <img src="https://www.flaticon.com/svg/static/icons/svg/3860/3860590.svg" alt="Download" height="18px" width="18px">
+                  </a>
+              </td>               
+              <td>Recupera FB</td>
+              <td>1.0.0.0</td>
+              <td>22/06/2017</td>
+            </tr>
+            <!-- Reinicia Abastecimentos -->
+            <tr>
+              <td>
+                  <a href="https://www.dropbox.com/s/gw16hipaygdgs2z/Reinicia%20Abastecimentos.exe?dl=1">
+                      <img src="https://www.flaticon.com/svg/static/icons/svg/3860/3860590.svg" alt="Download" height="18px" width="18px">
+                  </a>
+              </td>               
+              <td>Reinicia Abastecimentos</td>
+              <td>1.0.0.0</td>
+              <td>01/01/2019</td>
+            </tr>
+            <!-- Acesso Remoto Milvus -->
+            <tr>
+              <td>
+                  <a href="https://www.dropbox.com/s/ytrzg7u3pao89fk/B7N7OA8G5ZE_null_Milvus.Customizado.msi?dl=1">
+                      <img src="https://www.flaticon.com/svg/static/icons/svg/3860/3860590.svg" alt="Download" height="18px" width="18px">
+                  </a>
+              </td>               
+              <td>Acesso Remoto Milvus</td>
+              <td>1.0.0.0</td>
+              <td>27/04/2020</td>
+            </tr>
+          </table>
+        </div>   
       </div>
 
       <button class="accordion">Versões do PDV</button>
       <div class="panel">
         <div class="link">
-          <a href="https://mega.nz/file/Ed5jhQCL#fIbsitXCvirIylnmgGmaiO7_H5LSnKf-K5R-8UJqxiQ" rel="noopener noreferrer" target="_blank">PDV Vr 2.0.27.0</a>
-        </div>
-
-        <div class="link">
-          <a href="https://mega.nz/file/4dA3CCQD#eNP29I7Phq27O5mZhQe6WtOIPicwqzo_YoLiSvyx71I" rel="noopener noreferrer" target="_blank">PDV Vr 2.0.27.1 - Customizada para postos com mais de 32 bicos</a>
-        </div>
-
-        <div class="link">
-          <a href="https://mega.nz/file/0AJE0bDS#fe1Nwo1g5zlcuMRIRIxGgrMyRYfXkISMEHtYSdIcCtk" rel="noopener noreferrer" target="_blank">PDV Vr SAT</a>
-        </div>
-
-        <div class="link">
-          <a href="https://mega.nz/file/8cQxCYZB#pS2GTkDfhdAMvbKFTXCmQs5W2aJvdkGP43wW_0QqeY8" rel="noopener noreferrer" target="_blank">PDV Vr MFE</a>
-        </div>
-
-        <div class="link">
-          <a href="https://mega.nz/file/RBYlFSZL#RA8XVW-_NeqpboFBUVgD9S6Zup3GRMQkP8Tt5Giuoi4" rel="noopener noreferrer" target="_blank">PDV Vr 2.0.28.0</a>
-        </div>
-
-        <div class="link">
-          <a href="https://mega.nz/file/0IIGCLxI#RQvSrYOv1p0otwEsMuR6BP6vyN4ogyeLnqEKuFTtqwY" rel="noopener noreferrer" target="_blank">PDV Vr 2.0.28.0 - Versão Shipay(Pix)</a>
-        </div>
-
-        <div class="link">
-          <a href="https://mega.nz/file/VcpWgCoT#qYutmzcsYs0aeqGES2It7gFL89hYDGMntHl4JutxYtI" rel="noopener noreferrer" target="_blank">DLL da biometria para adicionar em versões anteriores a 26</a>
+          <table>
+            <tr>           
+              <th>Baixar</th>
+              <th>Descrição</th>
+              <th>Versão</th>
+              <th>Data de Lançamento</th>         
+            </tr>
+            <!-- PDV Versão 2.2.27.0 -->
+            <tr>
+                <td>
+                    <a href="https://www.dropbox.com/s/6ineo9xolmb4faa/LivePDV%20-%20RM.rar?dl=1">
+                        <img src="https://www.flaticon.com/svg/static/icons/svg/3860/3860590.svg" alt="Download" height="18px" width="18px">
+                    </a>
+                </td>               
+                <td>Live PDV</td>
+                <td>2.2.27.0</td>
+                <td>07/08/2020</td>
+            </tr>
+            <!-- PDV Versão 32 Bicos -->
+            <tr>
+              <td>
+                  <a href="https://www.dropbox.com/s/c0h5mqua5f9ca5o/LivePDV-%20anjicos.rar?dl=1">
+                      <img src="https://www.flaticon.com/svg/static/icons/svg/3860/3860590.svg" alt="Download" height="18px" width="18px">
+                  </a>
+              </td>               
+              <td>Live PDV (Custom 32 Bicos)</td>
+              <td>2.2.27.0</td>
+              <td>17/07/2020</td>
+            </tr>
+            <!-- PDV Versão MFE 2.2.26.0 -->
+            <tr>
+              <td>
+                  <a href="https://www.dropbox.com/s/xwn4vdbbyx47fdk/LivePDV_MFe_GErTEC.zip?dl=1">
+                      <img src="https://www.flaticon.com/svg/static/icons/svg/3860/3860590.svg" alt="Download" height="18px" width="18px">
+                  </a>
+              </td>               
+              <td>Live PDV MFE</td>
+              <td>2.2.26.0</td>
+              <td>10/01/2020</td>
+            </tr>
+            <!-- PDV Versão SAT 2.2.5.0 -->
+            <tr>
+              <td>
+                  <a href="https://www.dropbox.com/s/arno4t6mssir6j0/PDV%20Sat%202.2.5.rar?dl=1">
+                      <img src="https://www.flaticon.com/svg/static/icons/svg/3860/3860590.svg" alt="Download" height="18px" width="18px">
+                  </a>
+              </td>               
+              <td>Live PDV SAT</td>
+              <td>2.2.5.0</td>
+              <td>18/10/2017</td>
+            </tr>
+            <!-- PDV Versão 2.2.28.0 -->
+            <tr>
+              <td>
+                  <a href="https://www.dropbox.com/s/n35buv92kca2dg1/LivePDV%20-%20v2.2.28.0.zip?dl=1">
+                      <img src="https://www.flaticon.com/svg/static/icons/svg/3860/3860590.svg" alt="Download" height="18px" width="18px">
+                  </a>
+              </td>               
+              <td>Live PDV</td>
+              <td>2.2.28.0</td>
+              <td>09/09/2020</td>
+            </tr>
+            <!-- PDV Versão 2.2.28.0 (Shipay) -->
+            <tr>
+              <td>
+                  <a href="https://www.dropbox.com/s/h7cl2ir82iz70pz/LivePDV%20-%20v2.2.28.0_shipay.zip?dl=1">
+                      <img src="https://www.flaticon.com/svg/static/icons/svg/3860/3860590.svg" alt="Download" height="18px" width="18px">
+                  </a>
+              </td>               
+              <td>Live PDV (Pix)</td>
+              <td>2.2.28.0</td>
+              <td>31/11/2020</td>
+            </tr>
+            <!-- Dll Biometria -->
+            <tr>
+              <td>
+                  <a href="https://www.dropbox.com/s/ph8ff6agjjvo0wc/libcidbio.dll?dl=1">
+                      <img src="https://www.flaticon.com/svg/static/icons/svg/3860/3860590.svg" alt="Download" height="18px" width="18px">
+                  </a>
+              </td>               
+              <td>Dll Biometria (Vr 25+)</td>
+              <td>1.0.0.0</td>
+              <td>01/12/2019</td>
+            </tr>
+          </table>
         </div>
       </div>
 
-        <button class="accordion">Automação</button>
+        <button class="accordion">Arquivos de Automação</button>
         <div class="panel">
           <div class="link">
-            <a href="https://mega.nz/file/AEoC0SBb#MUEuv-lfbQTm6L39pECqLFK3HzlxrCujYGLAyVA5phk" rel="noopener noreferrer" target="_blank">CBC Manager Vr 2.2</a>
-          </div>
-
-          <div class="link">
-            <a href="https://mega.nz/file/YEgAjIBZ#uOPED93sHkqSSJhUlf5ALWts4R6JucJTgXXyqrdj9Po" rel="noopener noreferrer" target="_blank">CBC Manager 2k9</a>
-          </div>
-
-          <div class="link">
-            <a href="https://mega.nz/file/pMZWVZQJ#uQYqeFbJl0rOKmAHBMSFSZYf1Qq5xlcbksl5vr-Q31Y" rel="noopener noreferrer" target="_blank">HRS Console Vr 1.3.00 - Horustech</a>
-          </div>
-
-          <div class="link">
-            <a href="https://mega.nz/file/pdZgCbzD#iqhd6HmIlqg_RGirhgc2z4HFAY48Qjc367Qlj2h510c" rel="noopener noreferrer" target="_blank">Gerenciador FCM Vr 2.1.3.2 - Cesna</a>
-          </div>
-
-          <div class="link">
-            <a href="https://mega.nz/file/RcBHgYCL#aAOZrdS9zLD0gWJdzZKN9aDe5Ra1boE2SEcRgeY0JG0" rel="noopener noreferrer" target="_blank">Gerenciador IDcode Vr 1.0.0.0 - Cesna</a>
-          </div>
-
-          <div class="link">
-            <a href="https://mega.nz/file/gMojmKZA#kXJUa-vw4P6Gs6NWzduEkpbiKknb6zcfDJMWR999vtc" rel="noopener noreferrer" target="_blank">HiroConfig Vr 1.13.137</a>
-          </div>
-
-          <div class="link">
-            <a href="https://mega.nz/file/sY4GyaKT#5buxgv5lgb0ICU6La_JUhrbMDhyKWN3_pFFYU2Krl80" rel="noopener noreferrer" target="_blank">Company_disvr - para instalar CBC ou Horustech</a>
-          </div>
-
-          <div class="link">
-            <a href="https://mega.nz/file/BBp00CCB#dEa0gtUlL__XKQsp9HqICRxiXG2SieD2GBODglGb96k" rel="noopener noreferrer" target="_blank">Net Tracker - para instalar CBC ou Horustech</a>
-          </div>
-
-          <div class="link">
-            <a href="https://mega.nz/folder/ddpGyYzb#hCE6cEBpGiJSbu2E0g7scg" rel="noopener noreferrer" target="_blank">Firmware de atualização Horustech + Tutorial de atualização</a>
-          </div>
-
-          <div class="link">
-            <a href="https://mega.nz/file/cUxnRQQL#VzY3IcQOg_Ijh1l25EXIzWcHu5BzHZcsMdte7Zej_Qs" rel="noopener noreferrer" target="_blank">Certificado Company 2020</a>
+            <table>
+              <tr>           
+                <th>Baixar</th>
+                <th>Descrição</th>
+                <th>Versão</th>
+                <th>Data de Lançamento</th>         
+              </tr>
+              <!-- CBC Manager -->
+              <tr>
+                  <td>
+                      <a href="https://www.dropbox.com/s/pwq8opvv0d1wjgc/CBCManager%20V2.2.exe?dl=1">
+                          <img src="https://www.flaticon.com/svg/static/icons/svg/3860/3860590.svg" alt="Download" height="18px" width="18px">
+                      </a>
+                  </td>               
+                  <td>CBC Manager</td>
+                  <td>2.0.0.0</td>
+                  <td>01/01/2015</td>
+              </tr>
+              <!-- CBC Manager 2k9-->
+              <tr>
+                <td>
+                    <a href="https://www.dropbox.com/s/udfl52docwrdpmq/CBCManager2K9.rar?dl=1">
+                        <img src="https://www.flaticon.com/svg/static/icons/svg/3860/3860590.svg" alt="Download" height="18px" width="18px">
+                    </a>
+                </td>               
+                <td>CBC Manager 2k9</td>
+                <td>1.0.46.61</td>
+                <td>01/01/2017</td>
+              </tr>
+              <!-- HRS Console -->
+              <tr>
+                <td>
+                    <a href="https://www.dropbox.com/s/7pjdg9yf3kubjrp/HRSConsole%20Vr%201.4.02.exe?dl=1">
+                        <img src="https://www.flaticon.com/svg/static/icons/svg/3860/3860590.svg" alt="Download" height="18px" width="18px">
+                    </a>
+                </td>               
+                <td>HRS Console</td>
+                <td>1.4.0.2</td>
+                <td>01/01/2020</td>
+              </tr>
+              <!-- Certificado Company 2020 -->
+              <tr>
+                <td>
+                    <a href="https://www.dropbox.com/s/bb047xkel79jbii/Certificado%20Company%20-%202020.pfx?dl=1">
+                        <img src="https://www.flaticon.com/svg/static/icons/svg/3860/3860590.svg" alt="Download" height="18px" width="18px">
+                    </a>
+                </td>               
+                <td>Certificado Companytech</td>
+                <td>1.0.0.0</td>
+                <td>01/01/2020</td>
+              </tr>
+              <!-- Hiro config -->
+              <tr>
+                <td>
+                    <a href="https://www.dropbox.com/s/c30qeyxizbaw784/Setup_HiroConfig_1.13.137.exe?dl=1">
+                        <img src="https://www.flaticon.com/svg/static/icons/svg/3860/3860590.svg" alt="Download" height="18px" width="18px">
+                    </a>
+                </td>               
+                <td>Hiro Config</td>
+                <td>1.13.137.0</td>
+                <td>01/01/2017</td>
+              </tr>
+              <!-- Company_disvr (Emulador Company) -->
+              <tr>
+                <td>
+                    <a href="https://www.dropbox.com/s/7evkqc08akujfah/cmpnytc_discvr.exe?dl=1">
+                        <img src="https://www.flaticon.com/svg/static/icons/svg/3860/3860590.svg" alt="Download" height="18px" width="18px">
+                    </a>
+                </td>               
+                <td>Company_disvr (Emulador)</td>
+                <td>1.0.0.0</td>
+                <td>01/01/2017</td>
+              </tr>
+              <!-- Gerenciador FCM -->
+              <tr>
+                <td>
+                    <a href="https://www.dropbox.com/s/jb9l58vsv0fo23u/Setup_GerenciadorFcm_v2.1.3.2_R1.exe?dl=1">
+                        <img src="https://www.flaticon.com/svg/static/icons/svg/3860/3860590.svg" alt="Download" height="18px" width="18px">
+                    </a>
+                </td>               
+                <td>Gerenciador FCM (Cesna)</td>
+                <td>2.1.3.2</td>
+                <td>01/01/2015</td>
+              </tr>
+              <!-- Gerenciador IDCode (Cesna) -->
+              <tr>
+                <td>
+                    <a href="https://www.dropbox.com/s/to2qleb0nn662ay/Setup_GerenciadorIDcode_v1.0.0.0_R13.exe?dl=1">
+                        <img src="https://www.flaticon.com/svg/static/icons/svg/3860/3860590.svg" alt="Download" height="18px" width="18px">
+                    </a>
+                </td>               
+                <td>Gerenciador IDCode (Cesna)</td>
+                <td>1.0.0.0</td>
+                <td>01/01/2016</td>
+              </tr>
+              <!-- Net Tracker -->
+              <tr>
+                <td>
+                    <a href="https://www.dropbox.com/s/n83idw141yjbzsk/NetTracker%20v1.5.exe?dl=1">
+                        <img src="https://www.flaticon.com/svg/static/icons/svg/3860/3860590.svg" alt="Download" height="18px" width="18px">
+                    </a>
+                </td>               
+                <td>Net Tracker (Cesna)</td>
+                <td>1.5.0.0</td>
+                <td>01/01/2015</td>
+              </tr>
+              <!-- Firmware Company -->
+              <tr>
+                <td>
+                    <a href="https://www.dropbox.com/s/s8eiz656kv9rk7u/Firmware.rar?dl=1">
+                        <img src="https://www.flaticon.com/svg/static/icons/svg/3860/3860590.svg" alt="Download" height="18px" width="18px">
+                    </a>
+                </td>               
+                <td>Firmware Company</td>
+                <td>1.0.0.0</td>
+                <td>05/10/2020</td>
+              </tr>
+            </table>
           </div>
         </div>
 
-      <button class="accordion">Impressoras</button>
+      <button class="accordion">Drivers de Impressoras</button>
       <div class="panel">
         <div class="link">
-          <a href="https://mega.nz/file/0EoRlYJL#6jaeGpW4IOR55ONk7VW_hU_eK2Yd7YTWO9_Me6kCLs0" rel="noopener noreferrer" target="_blank">Driver Epson TMT 20</a>
+          <table>
+            <tr>           
+              <th>Baixar</th>
+              <th>Descrição</th>
+              <th>Versão</th>
+              <th>Data de Lançamento</th>         
+            </tr>
+            <!-- Driver da Epson TMT 20 TH -->
+            <tr>
+                <td>
+                    <a href="https://www.dropbox.com/s/k7tyiscdc3d83db/CD%20EPSON%20TM20.rar?dl=1">
+                        <img src="https://www.flaticon.com/svg/static/icons/svg/3860/3860590.svg" alt="Download" height="18px" width="18px">
+                    </a>
+                </td>               
+                <td>Epson TMT 20 TH</td>
+                <td>5.1.8.8</td>
+                <td>25/09/2014</td>
+            </tr>
+            <!-- Bermatech 4200, 2500, 100s -->
+            <tr>
+              <td>
+                  <a href="https://www.dropbox.com/s/101r1f4ktty6mng/Driver_de_Instalacao32e64BitsBermatech.zip?dl=1">
+                      <img src="https://www.flaticon.com/svg/static/icons/svg/3860/3860590.svg" alt="Download" height="18px" width="18px">
+                  </a>
+              </td>               
+              <td>Bermatech MP 4200, 2500, 100s</td>
+              <td>5.0.0.3</td>
+              <td>22/05/2018</td>
+            </tr>
+            <!-- Daruma DR 800 -->
+            <tr>
+              <td>
+                  <a href="https://www.dropbox.com/s/z5z58j4dzsloequ/Driver_Spooler_800.rar?dl=1">
+                      <img src="https://www.flaticon.com/svg/static/icons/svg/3860/3860590.svg" alt="Download" height="18px" width="18px">
+                  </a>
+              </td>               
+              <td>Daruma DR 800</td>
+              <td>2.0.1.7</td>
+              <td>01/01/2019</td>
+            </tr>
+            <!-- Elgin i7, i8, i9 -->
+            <tr>
+              <td>
+                  <a href="https://www.dropbox.com/s/781hyleh7fs8p7x/Elgin%20-%20i7%20i8%20i9.rar?dl=1">
+                      <img src="https://www.flaticon.com/svg/static/icons/svg/3860/3860590.svg" alt="Download" height="18px" width="18px">
+                  </a>
+              </td>               
+              <td>Elgin i7, i8, i9</td>
+              <td>1.0.0.0</td>
+              <td>01/10/2020</td>
+            </tr>
+          </table>
         </div>
 
-        <div class="link">
-          <a href="https://mega.nz/file/wVoxGCSB#rhJUnDZUc29OhAYYzK4QnS03X1H8mGGY_QcUwensBlo" rel="noopener noreferrer" target="_blank">Driver da Bermatech - 2500, 4000, 4200</a>
-        </div>
-
-        <div class="link">
-          <a href="https://mega.nz/file/AVoliS5K#zB0Tfk-83KrCouAPWLHsPZlYWQ4k3qJzN3w1bdxIv4A" rel="noopener noreferrer" target="_blank">Driver da Daruma Dr800 - Windows 7</a>
-        </div>
-
-        <div class="link">
-          <a href="https://mega.nz/file/xcpwiCxS#tzdUlYCPHo-y4D1hWmwYtb6qEYiu2q7ncNYeatk6u8c" rel="noopener noreferrer" target="_blank">Driver da Elgin i7, i8 e i9</a>
-        </div>
       </div>
 
       <button class="accordion">Arquivos TEF</button>
       <div class="panel">
         <div class="link">
-          <a href="https://mega.nz/file/YUhVCQbA#ynSFtmUzzi_YM3VBoYJTRE8tfd7Xdh_6Ek2CP-Vn9KI" rel="noopener noreferrer" target="_blank">Arquivos de instalação Sitef Gsurf</a>
-        </div>
-
-        <div class="link">
-          <a href="https://mega.nz/file/UYIXBSDI#IbvKC9cEWrqcEduFHjkVCGuXGFpQFmyx_rZciwPwvTk" rel="noopener noreferrer" target="_blank">Arquivos de instalação Getcard</a>
-        </div>
-
-        <div class="link">
-          <a href="https://mega.nz/file/9MBhEY5R#kZnQ-uMJAowRpA_IYW6EYkFT33jCOeYPyRUYrtM5m04" rel="noopener noreferrer" target="_blank">Driver de instalação Pinpad PPC 900 a 930</a>
-        </div>
-
-        <div class="link">
-          <a href="https://mega.nz/file/hcRhjC7T#9UL4Zio_fCyZG41UwhP5uHWA40JZHXzJve85vbVY940" rel="noopener noreferrer" target="_blank">Driver de instalação Pinpad Irgênico completo</a>
+          <table>
+            <tr>           
+              <th>Baixar</th>
+              <th>Descrição</th>
+              <th>Versão</th>
+              <th>Data de Lançamento</th>         
+            </tr>
+            <!-- Arquivos Sitef Gsurf -->
+            <tr>
+                <td>
+                    <a href="https://www.dropbox.com/s/k6ini14idgpkl2e/ARQUIVOS%20SITEF.rar?dl=1">
+                        <img src="https://www.flaticon.com/svg/static/icons/svg/3860/3860590.svg" alt="Download" height="18px" width="18px">
+                    </a>
+                </td>               
+                <td>Arquivos Sitef Gsurf</td>
+                <td>1.0.0.0</td>
+                <td>27/03/2020</td>
+            </tr>
+            <!-- Arquivos Getcard -->
+            <tr>
+              <td>
+                  <a href="https://www.dropbox.com/s/p190tqv7v0mfimq/Arquivos%20Getcard.rar?dl=1">
+                      <img src="https://www.flaticon.com/svg/static/icons/svg/3860/3860590.svg" alt="Download" height="18px" width="18px">
+                  </a>
+              </td>               
+              <td>Arquivos Getcard</td>
+              <td>1.0.0.0</td>
+              <td>25/10/2020</td>
+            </tr>
+            <!-- Driver Pinpad Gertec -->
+            <tr>
+              <td>
+                  <a href="https://www.dropbox.com/s/d62mihkx7tsq2ls/Gertec-Full-Installer_2.1.0.9%281%29.rar?dl=1">
+                      <img src="https://www.flaticon.com/svg/static/icons/svg/3860/3860590.svg" alt="Download" height="18px" width="18px">
+                  </a>
+              </td>               
+              <td>Driver Pinpad Gertec PPC 910 +</td>
+              <td>2.1.0.9</td>
+              <td>25/10/2020</td>
+            </tr>
+            <!-- Driver Pinpad Irgênico -->
+            <tr>
+              <td>
+                  <a href="https://www.dropbox.com/s/r8g0o0qwwwdlbt3/ingenicousbdrivers_3.26_setup_signed%281%29.zip?dl=1">
+                      <img src="https://www.flaticon.com/svg/static/icons/svg/3860/3860590.svg" alt="Download" height="18px" width="18px">
+                  </a>
+              </td>               
+              <td>Driver Pinpad Irgênico</td>
+              <td>3.26.0.0</td>
+              <td>13/10/2020</td>
+            </tr>
+          </table>
         </div>
       </div>
 
       <button class="accordion">Manuais Live</button>
       <div class="panel">
         <div class="link">
-          <a href="https://mega.nz/file/xQ4GxI5D#7SPAW6llA53Y-IgFMgmEkB5GBfyMRZotiIWmi9n5oJw" rel="noopener noreferrer" target="_blank">Instalação de tef Getcard</a>
-        </div>
-
-        <div class="link">
-          <a href="https://mega.nz/file/cMwRjSrJ#osHOXx5AV-GLqnGJLSZquNPHQvICsrwvvOCvx5SpMxA" rel="noopener noreferrer" target="_blank">Intalação Sitef Gsurf</a>
-        </div>
-
-        <div class="link">
-          <a href="https://mega.nz/file/xIQl1YyR#qItPitULYuVRFxKfMdYLSfJqAj3dEMEUCvMroNaVB7g" rel="noopener noreferrer" target="_blank">Instalação de PDV</a>
-        </div>
-
-        <div class="link">
-          <a href="https://mega.nz/file/oEADCABA#xYaI5FMIf_kaqLdFdDr6i1iZByJbz3abdXqEoFNjGv4" rel="noopener noreferrer" target="_blank">POP de Implantação de PDV</a>
-        </div>
-
-        <div class="link">
-          <a href="https://mega.nz/file/IcQ1zYBQ#ZNbu1O6OldrcFdPvNTPNwNBI_C2lpTiHEEXwP_LnE78" rel="noopener noreferrer" target="_blank">Tutorial para salvar xml NFCE</a>
-        </div>
-
-        <div class="link">
-          <a href="https://mega.nz/file/gIQFUKAB#OG1-xIYK-kS7GUqdr9xf-DuieDTicR-a8x-A3C8bjcU" rel="noopener noreferrer" target="_blank">POP de consulta equipamentos pré implantação Posto</a>
-        </div>
-
-        <div class="link">
-          <a href="https://mega.nz/file/IFRHCSiC#bRZb1bHG2vysdWylT8iAbyHRI8CQsg_R99QzDFlGTJQ" rel="noopener noreferrer" target="_blank">POP de consulta equipamentos pré implantação Loja</a>
-        </div>
-
-        <div class="link">
-          <a href="https://mega.nz/file/gIZRiaKK#Is4rShe47uCyRdKEw1aM8wFf9G0LzsPmFBTXE44rubQ" rel="noopener noreferrer" target="_blank">POP de implantação Live Loja</a>
-        </div>
-
-        <div class="link">
-          <a href="https://mega.nz/file/FMQ3QKzZ#4n53Wmiwl1J5VlzLdahyy2wKR_2Q9YviZbDzly0KO_U" rel="noopener noreferrer" target="_blank">OS de instalação de automação</a>
-        </div>
-
-        <div class="link">
-          <a href="https://mega.nz/file/5AgSlRzA#Ob9cCrD-szmyo6v5ZFEqiD0_-fEEWL3rq2FzkgmkXRQ" rel="noopener noreferrer" target="_blank">POP treinamento de LMC</a>
-        </div>
-
-        <div class="link">
-          <a href="https://mega.nz/file/JYgWkZiA#T-DWmmMdDyoUk9kW7Icuk7m-4J255psAGKYVe6fl7AA" rel="noopener noreferrer" target="_blank">Instalação de pdv Gpos</a>
-        </div>
-
-        <div class="link">
-          <a href="https://mega.nz/file/FZpGVDSQ#3FZt2HoYmaU_c64XjGoPp9Q6gHQWmueSGyckXvMseP0" rel="noopener noreferrer" target="_blank">Complemento do manual de instalação Gpos</a>
+          <table>
+            <tr>           
+              <th>Baixar</th>
+              <th>Descrição</th>
+              <th>Versão</th>
+              <th>Data de Lançamento</th>         
+            </tr>
+            <!-- Consulta de Equipamentos Posto -->
+            <tr>
+                <td>
+                    <a href="https://www.dropbox.com/s/r2uezuajvx53icg/Consulta%20dos%20equipamentos%20Posto.rar?dl=1">
+                        <img src="https://www.flaticon.com/svg/static/icons/svg/3860/3860590.svg" alt="Download" height="18px" width="18px">
+                    </a>
+                </td>               
+                <td>Consulta de Equipamentos Posto</td>
+                <td>1.0.0.0</td>
+                <td>24/10/2016</td>
+            </tr>
+            <!-- Consulta de Equipamentos Loja -->
+            <tr>
+              <td>
+                  <a href="https://www.dropbox.com/s/80w0nzp3rzx442c/Consulta%20dos%20equipamentos%20Loja.rar?dl=1">
+                      <img src="https://www.flaticon.com/svg/static/icons/svg/3860/3860590.svg" alt="Download" height="18px" width="18px">
+                  </a>
+              </td>               
+              <td>Consulta de Equipamentos Loja</td>
+              <td>1.0.0.0</td>
+              <td>24/10/2016</td>
+            </tr>
+            <!-- POP Implantação Loja -->
+            <tr>
+              <td>
+                  <a href="https://www.dropbox.com/s/e4t8pno5l1ivs7m/IMPLANTA%C3%87%C3%83O%20LIVELOJA.rar?dl=1">
+                      <img src="https://www.flaticon.com/svg/static/icons/svg/3860/3860590.svg" alt="Download" height="18px" width="18px">
+                  </a>
+              </td>               
+              <td>POP Implantação Loja</td>
+              <td>1.0.0.0</td>
+              <td>18/10/2016</td>
+            </tr>
+            <!-- Manual Instalação de PDV -->
+            <tr>
+              <td>
+                  <a href="https://www.dropbox.com/s/erb1autd498wy40/MANUAL%20INSTALA%C3%87%C3%83O%20DE%20PDV%281%29.rar?dl=1">
+                      <img src="https://www.flaticon.com/svg/static/icons/svg/3860/3860590.svg" alt="Download" height="18px" width="18px">
+                  </a>
+              </td>               
+              <td>Manual Instalação de PDV</td>
+              <td>1.0.0.0</td>
+              <td>01/01/2019</td>
+            </tr>
+            <!-- POP Implantação de PDV -->
+            <tr>
+              <td>
+                  <a href="https://www.dropbox.com/s/gbtmcjxzbgtjlpi/DA%20IMPLANTA%C3%87%C3%83O%20LIVEPDV%20-%20NFC-e.rar?dl=1">
+                      <img src="https://www.flaticon.com/svg/static/icons/svg/3860/3860590.svg" alt="Download" height="18px" width="18px">
+                  </a>
+              </td>               
+              <td>POP Implantação de PDV</td>
+              <td>1.0.0.0</td>
+              <td>16/02/2017</td>
+            </tr>
+            <!-- OS de Instalação de Automação -->
+            <tr>
+              <td>
+                  <a href="https://www.dropbox.com/s/hnure6uhb1m4pne/%27OS%27%20INSTALA%C3%87%C3%83O%20DE%20AUTOMA%C3%87%C3%83O.rar?dl=1">
+                      <img src="https://www.flaticon.com/svg/static/icons/svg/3860/3860590.svg" alt="Download" height="18px" width="18px">
+                  </a>
+              </td>               
+              <td>OS de Instalação de Automação</td>
+              <td>1.0.0.0</td>
+              <td>20/11/2018</td>
+            </tr>
+            <!-- Instalação de Sitef Gsurf -->
+            <tr>
+              <td>
+                  <a href="https://www.dropbox.com/s/bqer44clyfyml51/Instala%C3%A7%C3%A3o%20TEF%20Sitef.rar?dl=1">
+                      <img src="https://www.flaticon.com/svg/static/icons/svg/3860/3860590.svg" alt="Download" height="18px" width="18px">
+                  </a>
+              </td>               
+              <td>Instalação de Sitef Gsurf</td>
+              <td>1.0.0.0</td>
+              <td>01/10/2020</td>
+            </tr>
+            <!-- Manual de Instalação Getcard -->
+            <tr>
+              <td>
+                  <a href="https://www.dropbox.com/s/bdit4gn8n6nwio6/Manual%20de%20Instala%C3%A7%C3%A3o%20do%20Getcard.rar?dl=1">
+                      <img src="https://www.flaticon.com/svg/static/icons/svg/3860/3860590.svg" alt="Download" height="18px" width="18px">
+                  </a>
+              </td>               
+              <td>Manual de Instalação Getcard</td>
+              <td>1.0.0.0</td>
+              <td>01/01/2019</td>
+            </tr>
+            <!-- Manual de Instalação Gpos -->
+            <tr>
+              <td>
+                  <a href="https://www.dropbox.com/s/y2hexbx6gtvhcwh/MANUAL%20-%20GPOS%20Instala%C3%A7%C3%A3o%202020%281%29.rar?dl=1">
+                      <img src="https://www.flaticon.com/svg/static/icons/svg/3860/3860590.svg" alt="Download" height="18px" width="18px">
+                  </a>
+              </td>               
+              <td>Manual de Instalação Gpos</td>
+              <td>1.0.0.0</td>
+              <td>01/10/2020</td>
+            </tr>
+            <!-- Complemento do Manual Gpos -->
+            <tr>
+              <td>
+                  <a href="https://www.dropbox.com/s/onnycc34naj9m0o/Complemento%20do%20manual%20da%20Gpos.rar?dl=1">
+                      <img src="https://www.flaticon.com/svg/static/icons/svg/3860/3860590.svg" alt="Download" height="18px" width="18px">
+                  </a>
+              </td>               
+              <td>Complemento do Manual Gpos</td>
+              <td>1.0.0.1</td>
+              <td>15/10/2020</td>
+            </tr>
+            <!-- POP Treinamento LMC -->
+            <tr>
+              <td>
+                  <a href="https://www.dropbox.com/s/ffbrj3funjccn1w/DO%20TREINAMENTO%20LMC.rar?dl=1">
+                      <img src="https://www.flaticon.com/svg/static/icons/svg/3860/3860590.svg" alt="Download" height="18px" width="18px">
+                  </a>
+              </td>               
+              <td>POP Treinamento LMC</td>
+              <td>1.0.0.0</td>
+              <td>20/08/2018</td>
+            </tr>
+            <!-- Tutorial Salvar XML NFCE -->
+            <tr>
+              <td>
+                  <a href="https://www.dropbox.com/s/20991clecczebc8/Tutorial%20Salvar%20XML%20NFCe%20%281%29.rar?dl=1">
+                      <img src="https://www.flaticon.com/svg/static/icons/svg/3860/3860590.svg" alt="Download" height="18px" width="18px">
+                  </a>
+              </td>               
+              <td>Tutorial Salvar XML NFCE</td>
+              <td>1.0.0.0</td>
+              <td>01/01/2018</td>
+            </tr>
+          </table>
         </div>
       </div>
     </div>
@@ -367,7 +795,7 @@
       <div>
         <p>&copy; <a class="secret" rel="noopener noreferrer" href="https://github.com/Anderson026/" target="_blank" title="Não Clicar!">Anderson Ferreira</a> 2020</p>
       </div>
-      <div><p class="version">Vr 2.0</p></div>
+      <div><p class="version">Vr 2.1</p></div>
     </div>
   </div>
 
