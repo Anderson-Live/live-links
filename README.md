@@ -12,5 +12,5 @@ Link da aplicação: <a href="https://live-implantacao.netlify.app/">Live Implan
 
 ### Tecnologias
 
-- [HTML 5]
-- [CSS 3]
+- HTML 5
+- CSS 3
