@@ -4,7 +4,7 @@
 
 ## Uma página de downloads dos principais arquivos instalação e configuração.
 
-<a href="https://live-implantacao.netlify.app/" target="_blank">Link da aplicação</a>
+Link da aplicação: <a href="https://live-implantacao.netlify.app/">Live Implantação</a>
 
 ### Features
 
