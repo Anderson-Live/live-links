@@ -1,148 +1,163 @@
-/* espaçamento global */
-* {
+/* configurações globais */
+html, body {
+    width: 100%;
+    height: 100%;
     margin: 0;
     padding: 0;
-    text-decoration: none;
-}
-/* tamanho e alinhamento do container */
-.container {
-    width: 100vw;
-    height: 100vh;
+    box-sizing: border-box;
+  
+    font-family: 'Times New Roman', Times, serif;
+  
+    color: #fff;
+  }
+  /* tamanho e display tipo grid do container geral */
+  .container {
+    height: 100%;
+    width: 100%;
     background-color: #1F6A8F;
-
+    box-sizing: border-box;
+  
+    display: grid;
+    grid-template-areas: "header" "main" "footer";
+    grid-template-rows: 7% 86% 7%;
+  
+  }
+  /* estilizaçãodo cabeçalho */
+  header {
+    grid-area: header;
+    background-color: #FA7F00;
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-
+  
+    font-size: 1.9rem;
+    font-weight: bold;
+  }
+  /* alinhamento e overflow do conteúdo principal da página */
+  main {
+    grid-area: main;
+    text-align: center;
+  
     overflow-y: auto;
     overflow-x: hidden;
-}
-/* estilização e alinhamento do cabeçalho */
-.header {
+  }
+  /* fonte do subtítulo */
+  main h4 {
+    margin: 70px 0;
+    font-size: 1.4rem;
+  }
+  /* tamanho e cor dos botões */
+  .button_Accordion {
+    width: 60%;
+    height: 8%;
     background-color: #FA7F00;
-    width: 100vw;
-    height: 8vh;
-    text-align: center;
-    color: white;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-/* estilização dos parágrafos da sessão */
-.section p {
-    text-align: center;
-    color: white;
-    font-size: 22px;
-    margin-bottom: 30px;
-    margin-top: 30px;
-}
-/* estilização do botão */
-.accordion {
-    background-color: #FA7F00;
-    color: white;
-    cursor: pointer;
-    padding: 18px;
-    width: 60vw;
     border: none;
+  
+    color: #fff;
+  
+  }
+  /* alinhamento do texto do label */
+  .button_Accordion {
     text-align: left;
-    outline: none;
-    font-size: 15px;
-    transition: 0.4s;
-    box-sizing: border-box;
-}
-/* efeito de passar o mouse no botão */
-.active, .accordion:hover {
-    background-color: orange;
-}
-/* efeito ao clicar no mouse e abrir a div com os link*/
-.accordion:after {
-    content: '\002B';
-    color: white;
-    font-weight: bold;
-    float: right;
-    margin-left: 5px;
-}
-/* efeito de fechar a div dos link */
-.active:after {
-    content: '\2212';
-}
-/* estilização e alinhamento da div com os links */
-.panel {
-    padding: 0 18px;
-    background-color: white;
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.2s ease-out;
-
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
-}
-/* cor dos links */
-/* a {
-    color: #1F6A8F;
-    font-size: 1.2rem;
-    margin: 2px;
-} */
-/* efeito de passar o mouse nos links */
-/*  a:hover {
-    color: orange;
-} */
-
-/* Alinhamento das tabelas */
-table {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-/* Estilização do cabeçalho das tabelas */
-th {
-  text-align: center;
-    padding: 0px 35px;
-    color: #1F6A8F;
-    font-size: 1.1rem;
-}
-/* Estilização do conteúdo da tabela */
-tr, td {
-    text-align: center;
-    padding: 0px 35px;
-    color: #1F6A8F;
     font-size: 1rem;
-}
-/* tamanho e alinhamento do rodapé */
-.footer {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-
-    height: 7vh;
-    width: 100vw;
-    margin-top: 30px;
-    margin-bottom: 15px;
-}
-/* cor e tamanho da fonte do rodapé */
-.footer p {
-    color: white;
+  }
+  /* alinhamento do span e tamanho da fonte */
+  .button_Accordion span {
+    float: right;
+    font-weight: bold;
+    font-size: 1.3rem;
+  }
+  /* efeito ao passar o mouse pelo botões */
+  .button_Accordion:hover {
+    background-color: orange;
+    transition: 0.5s;
+  }
+  /* Tamanho e overflow das tabelas */
+  .panel {
+    width: 60%;
+    margin: 0 20%;
+    background-color: #fff;
+    display: none;
+  
+    height: 50%;
+    overflow-y: auto;
+    overflow-x: hidden;
+  
+  }
+  /* classe que ativa o painel das tabelas ao clicar no mouse */
+  .active {
+    display: block;
+  }
+  /* largura e estilização das tabelas */
+  .panel table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  /* estilização dos itens dentro das tabelas */
+  .panel th, td {
+    padding: 5px;
+    text-align: left;
+    box-sizing: content-box;
+    border: 1px solid #1F6A8F;
+    text-align: center;
     font-size: 1.2rem;
-}
-/* alinhamento da div da esquerda */
-.version {
-    padding-right: 20px;
-    
-}
-/* alinhamento da div a direita */
-.div-hide {
-    padding-left: 20px;
-}
-/* cor do link secreto */
-.secret {
+    color: #1F6A8F;
+  }
+  /* estilização do rodapé */
+  footer {
+    grid-area: footer;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  
+    font-size: 1.2rem;
+  }
+  /* cor do link do meu repositório */
+  .secret {
     color: white;
-}
-/* efeito ao passar o mouse no link secreto */
-.secret:hover {
+    text-decoration: none;
+  }
+  /* efeito ao passar o mouse no link secreto */
+  .secret:hover {
     color: #FA7F00;
-}
+  }
+  
+  /* Responsividade - adpatações da largura dos botões em diferentes tipos de dipositivos*/
+  
+  @media screen and (max-width: 1200px) {
+    .button_Accordion {
+      width: 70%;
+    }
+  
+    .panel {
+      width: 70%;
+      margin: 0 15%;
+  
+      overflow-x: auto;
+    }
+  }
+  
+  @media screen and (max-width: 900px) {
+    .button_Accordion {
+      width: 80%;
+    }
+  
+    .panel {
+      width: 80%;
+      margin: 0 10%;
+  
+      overflow-x: auto;
+    }
+  }
+  
+  @media screen and (max-width: 500px) {
+    .button_Accordion {
+      width: 95%;
+    }
+  
+    .panel {
+      margin: 0 2.5%;
+      width: 95%;
+      overflow-x: auto;
+    }
+  }
