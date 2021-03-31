@@ -54,7 +54,7 @@ html, body {
     border: none;
   
     color: #fff;
-  
+    
   }
   /* alinhamento do texto do label */
   .button_Accordion {
@@ -82,7 +82,6 @@ html, body {
     height: 50%;
     overflow-y: auto;
     overflow-x: hidden;
-  
   }
   /* classe que ativa o painel das tabelas ao clicar no mouse */
   .active {
