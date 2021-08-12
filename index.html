@@ -18,9 +18,15 @@
     <header><span>Live Implantação</span></header>
     <!-- sessão com os botões e links -->
     <main>
-      <h4>
-        <a class="linkAcess" href="https://live-password.netlify.app/">Acessar o Live Password</a>
-      </h4>
+      <div class="btn-links">
+        <h4>
+          <a class="linkAcess" href="https://live-password.netlify.app/">Acessar o Live Password</a>
+        </h4>
+        <div class="inputs">
+          <input type="password" id="secretPassword" placeholder="Digite a senha!">
+          <input type="submit" value="Enviar" onclick="redirect()">
+        </div>
+      </div>
 
         <button class="button_Accordion">Arquivos de Instalação <span>+</span></button>
 
@@ -1068,7 +1074,7 @@
 
       <div></div>
 
-      <span class="version">Vr 2.0.2.24</span>
+      <span class="version">Vr 2.2.0</span>
 
     </footer>
   </div>
@@ -1093,6 +1099,7 @@
         });
       }
   </script>
+  <script src="./redirect.js"></script>
 </body>
 
 </html>

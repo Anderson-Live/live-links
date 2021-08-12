@@ -34,6 +34,43 @@ html, body {
     font-weight: bold;
   }
 
+  .btn-links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 60%;
+    margin-left: 20%;
+  }
+
+  .inputs {
+    height: 45px;
+    width: 256px;
+  }
+
+  input[type="password" i] {
+    height: 100%;
+    width: 70%;
+    border-radius: 3px;
+    border: none;
+  }
+
+  input[type="submit" i] {
+    height: 100%;
+    width: 25%;
+    background-color: #FA7F00;
+    border: none;
+    border-radius: 3px;
+    font-weight: bold;
+    box-sizing: border-box;
+    color: #fff;
+    transition: all 0.3s;
+  }
+
+  input[type="submit" i]:hover {
+    background-color: orange;
+    transition: all 0.3s;
+  }
+
   .linkAcess {
     height: 20px;
     padding: 10px;
