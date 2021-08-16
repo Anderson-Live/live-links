@@ -54,13 +54,22 @@ html, body {
     border: none;
   }
 
+  input::-webkit-input-placeholder {
+    font-size: 1rem;
+  }
+
+  input::-moz-placeholder {
+    font-size: 1rem;
+  }
+
+
   input[type="submit" i] {
     height: 100%;
     width: 25%;
     background-color: #FA7F00;
     border: none;
     border-radius: 3px;
-    font-weight: bold;
+    font-size: 16px;
     box-sizing: border-box;
     color: #fff;
     transition: all 0.3s;
