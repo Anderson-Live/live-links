@@ -54,11 +54,11 @@ html, body {
     border: none;
   }
 
-  input::-webkit-input-placeholder {
+  ::-webkit-input-placeholder {
     font-size: 1rem;
   }
 
-  input::-moz-placeholder {
+  ::-moz-placeholder {
     font-size: 1rem;
   }
 
